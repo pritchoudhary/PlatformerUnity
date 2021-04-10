@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8704986062838182980
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1289617709050685244}
+  - component: {fileID: 5680524546127879024}
+  m_Layer: 2
+  m_Name: PrefabNode
+  m_TagString: Node
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1289617709050685244
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8704986062838182980}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 9.09}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5680524546127879024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8704986062838182980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23e5c74ca6bb5b04d9939edd1036da99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debug: 0
+  overlapPrefabs: 0
+  surfaceNormal: 0
+  maxSurfaceAngle: 45
+  prefabLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  numberOfPrefabsToSpawn: 3
+  distanceBetPrefab: 2
+  isMesh: 0
+  posOffset: 0
+  xRot: {x: 0, y: 0}
+  yRot: {x: 0, y: 0}
+  zRot: {x: 0, y: 0}
+  rotationOverRide: {x: 0, y: 0, z: 0}
+  randomScaler: {x: 0, y: 0}
+  scalerOverRide: {x: 0, y: 0, z: 0}
+  prefabList:
+  - {fileID: 2280321289233941024, guid: afae0107889903146aad43024413a594, type: 3}
+  - {fileID: 3753185413751952216, guid: 73010ebf8e49ed64b8f409b3579bbe12, type: 3}
+  prefabValues:
+  - 1
+  - 1
+  addPrefab: 0
+  xLock: 0
+  zLock: 0
+  shape: 0
+  prefabParent: {fileID: 0}
+  isChild: 0

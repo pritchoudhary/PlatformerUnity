@@ -5,13 +5,16 @@ using UnityEngine;
 //Top down camera that would follow the player with an offset at all times
 public class CameraBehaviour : MonoBehaviour
 {
-    //Variables
-    public Transform playerTarget;
+    //Variables    
     public Vector3 targetOffset;
     public float moveSpeed = 1.5f;
-
+    private Transform playerTarget;
     private Transform cameraTransform;
 
+    private void Awake()
+    {
+        playerTarget = FindObjectOfType<PlayerScript>().transform;
+    }
     // Start is called before the first frame update
     void Start()
     {
