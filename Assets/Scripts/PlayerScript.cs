@@ -6,11 +6,13 @@ public class PlayerScript : MonoBehaviour
 {
     public float playerSpeed;
     private Rigidbody rigidbody;
+    public bool isPlayerAlive;
 
     // Start is called before the first frame update
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
+        isPlayerAlive = true;
     }
 
     // Update is called once per frame

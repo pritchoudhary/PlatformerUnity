@@ -7,12 +7,8 @@ public class ShootProjectiles : MonoBehaviour
     public Rigidbody projectile;
     public Transform spawnPoint;    
     bool isShooting = false;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    
+ 
     // Update is called once per frame
     void Update()
     {
@@ -26,7 +22,7 @@ public class ShootProjectiles : MonoBehaviour
         {
             if (!isShooting)
             {
-                StartCoroutine(Shoot());
+                StartCoroutine(Shoot());                
             }               
 
         }
@@ -50,4 +46,5 @@ public class ShootProjectiles : MonoBehaviour
         yield return new WaitForSeconds(1f);
         isShooting = false;
     }
+
 }

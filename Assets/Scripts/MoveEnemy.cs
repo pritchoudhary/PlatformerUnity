@@ -7,7 +7,7 @@ public class MoveEnemy : MonoBehaviour
     //Variables
     public float enemyMoveSpeed = 2f;
     public float enemyObstacleDetect = 4f;
-    
+   
     // Update is called once per frame
     void Update()
     {
@@ -29,4 +29,5 @@ public class MoveEnemy : MonoBehaviour
             }
         }
     }
+  
 }
