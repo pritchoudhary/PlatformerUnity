@@ -19,6 +19,7 @@ public class PrefabEditor : MonoBehaviour
         Object clone = Instantiate(node, Vector3.zero, Quaternion.identity);
         clone.name = node.name;
     }
+}
 
     public class LayerMasker : Editor
     {
@@ -45,7 +46,7 @@ public class PrefabEditor : MonoBehaviour
             int mask = 0;
             for (int i = 0; i < layerNums.Count; i++)
             {
-                if ((maskWithoutEmpty & (1 << 1)) > 0)
+                if ((maskWithoutEmpty & (1 << i)) > 0)
                     mask |= (1 << layerNums[i]);
             }
             layerMask.value = mask;
@@ -220,4 +221,4 @@ public class PrefabEditor : MonoBehaviour
         }
     }
 
-}
+

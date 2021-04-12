@@ -5,6 +5,7 @@ using UnityEngine;
 public class HitPlayer : MonoBehaviour
 {
     PlayerScript player;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,9 @@ public class HitPlayer : MonoBehaviour
         {
             collision.gameObject.SetActive(false);
             player.isPlayerAlive = false;
+            FindObjectOfType<GameManager>().PlayerDead();
         }
 
     }
+
 }

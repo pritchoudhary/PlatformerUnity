@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Node
+  - Interactive
+  - EndPoint
   layers:
   - Default
   - TransparentFX
